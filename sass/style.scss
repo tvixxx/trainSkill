@@ -1,5 +1,22 @@
+// Width
+$max_width: 1920px;
+$ul_width: 500px;
+
+// Font-Size
+$base_font_size: 14px;
+$header_1_size: 24px;
+
+
+// Mixins
+@mixin border-radius($box_border_radius) {
+	-webkit-border-radius: $box_border_radius;
+	-moz-border-radius: $box_border_radius;
+	-ms-border-radius: $box_border_radius;
+	-o-border-radius: $box_border_radius;
+	border-radius: $box_border_radius;
+}
+
 body {
-	min-width: 960px;
 	min-height: 500px;
 	background-color: #CACACA;
 }
@@ -8,19 +25,22 @@ body {
 	display: table;
 	clear: both;
 }
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
 
 .main-header {
-	$header_width: 1920px;
-	width: $header_width;
-
+	max-width: $max_width;
 	//nav
 	.main-navigation {
-		width: 960px;
 		display: block;
-		margin: 0 auto;
 	}
+		
 		ul {
-			margin: 0;
+			width: $ul_width;
+			margin-left: auto;
+			margin-right: auto;
 			padding: 0;
 			font-size: 0;
 			list-style: 0;
@@ -28,7 +48,7 @@ body {
 			li {
 				display: inline-block;
 				margin-top: 50px;
-				font-size: 14px;
+				font-size: $base_font_size;
 				line-height: 20px;
 				vertical-align: top;
 			}
@@ -39,6 +59,7 @@ body {
 					text-decoration: none;
 					color: #000;
 					background-color: #F1F1F1;
+					@include border-radius (2px);
 					
 
 					&:hover {
@@ -46,40 +67,20 @@ body {
 						background-color: #919191;
 					}
 				}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 //modal-window
-@mixin border-radius($box_border_radius) {
-	-webkit-border-radius: $box_border_radius;
-	-moz-border-radius: $box_border_radius;
-	-ms-border-radius: $box_border_radius;
-	-o-border-radius: $box_border_radius;
-	border-radius: $box_border_radius;
-}
 .modal-content {
 	display: none;
 	position: relative;
 	width: 495px;
 	top: 40px;
-	left: 25px;
+	left: -25px;
 	margin: 0 auto;
 	background-color: #A7A7A7;
 	@include border-radius(5px);
 	
-
+	// close
 	.modal-content-close {
 		content: "";
 		position: absolute;
@@ -93,7 +94,7 @@ body {
 		cursor: pointer;
 	}
 		.modal-content-title {
-			font-size: 24px;
+			font-size: $header_1_size;
 			line-height: 32px;
 			margin-left: 20px;
 			margin-top: 10px;
@@ -150,4 +151,13 @@ body {
 // modal-class-show
 .show {
 	display: block;
+	-webkit-animation: bounce .4s;
+	animation: bounce .4s;
+}
+@keyframes bounce {
+	0% { -webkit-transform: translateY(-2000px); transform: translateX(-2000px);}
+	70% { -webkit-transform: translateY(30px); transform: translateX(30px);}
+	90% { -webkit-transform: translateY(-10px); transform: translateX(-10px);}
+	100% { -webkit-transform: translateY(0); transform: translateX(0);}
+	
 }
