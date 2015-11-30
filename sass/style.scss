@@ -93,11 +93,11 @@ body {
 		background-position: 0 -304px;
 		cursor: pointer;
 	}
-		.modal-content-title {
+		h2 {
+			display: inline-block;
 			font-size: $header_1_size;
 			line-height: 32px;
-			margin-left: 20px;
-			margin-top: 10px;
+			margin: 10px 0 0 20px;
 		}
 		p {
 			margin-left: 20px;
