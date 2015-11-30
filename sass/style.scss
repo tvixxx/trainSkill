@@ -1,5 +1,6 @@
 body {
 	min-width: 960px;
+	min-height: 500px;
 	background-color: #CACACA;
 }
 .clearfix {
@@ -7,6 +8,60 @@ body {
 	display: table;
 	clear: both;
 }
+
+.main-header {
+	$header_width: 1920px;
+	width: $header_width;
+
+	//nav
+	.main-navigation {
+		width: 960px;
+		display: block;
+		margin: 0 auto;
+	}
+		ul {
+			margin: 0;
+			padding: 0;
+			font-size: 0;
+			list-style: 0;
+		}
+			li {
+				display: inline-block;
+				margin-top: 50px;
+				font-size: 14px;
+				line-height: 20px;
+				vertical-align: top;
+			}
+				a {
+					display: inline-block;
+					padding: 5px 10px;
+					margin-right: 20px;
+					text-decoration: none;
+					color: #000;
+					background-color: #F1F1F1;
+					
+
+					&:hover {
+						text-decoration: none;
+						background-color: #919191;
+					}
+				}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//modal-window
 @mixin border-radius($box_border_radius) {
 	-webkit-border-radius: $box_border_radius;
 	-moz-border-radius: $box_border_radius;
@@ -15,25 +70,26 @@ body {
 	border-radius: $box_border_radius;
 }
 .modal-content {
+	display: none;
 	position: relative;
-	width: 460px;
-	top: 100px;
+	width: 495px;
+	top: 40px;
+	left: 25px;
 	margin: 0 auto;
 	background-color: #A7A7A7;
 	@include border-radius(5px);
 	
 
 	.modal-content-close {
-		font-size: 0;
-	}
-	.modal-content-close:after {
 		content: "";
 		position: absolute;
-		top: 0px;
-		left: 470px;
+		font-size: 0;
+		top: 5px;
+		left: 500px;
 		width: 23px;
 		height: 23px;
-		background-image: url(../img/icon-cross-x.png) ;
+		background: url(../img/sprite-login-form.png) no-repeat center;
+		background-position: 0 -304px;
 		cursor: pointer;
 	}
 		.modal-content-title {
@@ -44,16 +100,25 @@ body {
 		}
 		p {
 			margin-left: 20px;
+			letter-spacing: -1px;
 		}
 		input:first-child {
 			margin-left: 20px;
 			margin-right: 20px;
 		}
 		input {
+			min-height: 10px;
+			padding: 5px 10px;
 			outline: none;
-			border: none;
+			border: 1px solid #000;
+			@include border-radius(2px);
 			background-color: #F5F988;
+		} 
+		input[type="text"]:focus,
+		input[type="password"]:focus {
+			border: 1px solid #E0D79E;
 		}
+
 		button {
 			display: block;
 			width: 120px;
@@ -64,8 +129,25 @@ body {
 			outline: none;
 			border: none;
 			margin-top: 25px;
-			margin-left: 315px;
+			margin-left: 355px;
 			margin-bottom: 20px;
+			@include border-radius(2px);
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+
+				color: black;
+				background-color: white;
+			}
 		}
 
+}
+
+
+
+// modal-class-show
+.show {
+	display: block;
 }

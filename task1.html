@@ -10,18 +10,35 @@
 </head>
 <body>
 	
+	<!-- Header-Navgation -->
+	<header class="main-header">
+		<nav class="main-navigation">
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Feedback</a></li>
+				<li><a href="#">Contacts</a></li>
+				<li class="login"><a href="#">Sing In</a></li>
+				<li class="registration"><a href="#">Sign Up</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- //Header-Navgation -->
+
+	<!-- Modal-Window -->
 	<div class="modal-content clearfix">
 		<div class="modal-content-close">
 			закрыть
 		</div>
 		<h2 class="modal-content-title">Личный Кабинет</h2>
 		<p>Введите пожалуйста свой логин и пароль.</p>
-		<form class="login-form" action="/echo" method="post">
+		<form class="login-form clearfix" action="/echo" method="post">
 			<input type="text" class="icon-user" name="login" placeholder="Логин" >
 			<input type="password" class="icon-password" name="password" placeholder="Пароль" >
 			<button type="submit" class="btn">Войти</button>
 		</form>
 	</div>
+	<!-- //Modal-Window -->
 
+	<script src="js/Modal.js"></script>
 </body>
 </html>
