@@ -1,0 +1,77 @@
+/* line 1, ../sass/style.scss */
+body {
+  min-width: 960px;
+  background-color: #CACACA;
+}
+
+/* line 5, ../sass/style.scss */
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 17, ../sass/style.scss */
+.modal-content {
+  position: relative;
+  width: 460px;
+  top: 100px;
+  margin: 0 auto;
+  background-color: #A7A7A7;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 26, ../sass/style.scss */
+.modal-content .modal-content-close {
+  font-size: 0;
+}
+/* line 29, ../sass/style.scss */
+.modal-content .modal-content-close:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 470px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/icon-cross-x.png);
+  cursor: pointer;
+}
+/* line 39, ../sass/style.scss */
+.modal-content .modal-content-title {
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+/* line 45, ../sass/style.scss */
+.modal-content p {
+  margin-left: 20px;
+}
+/* line 48, ../sass/style.scss */
+.modal-content input:first-child {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* line 52, ../sass/style.scss */
+.modal-content input {
+  outline: none;
+  border: none;
+  background-color: #F5F988;
+}
+/* line 57, ../sass/style.scss */
+.modal-content button {
+  display: block;
+  width: 120px;
+  min-height: 20px;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  margin-top: 25px;
+  margin-left: 315px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,71 @@
+body {
+	min-width: 960px;
+	background-color: #CACACA;
+}
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+@mixin border-radius($box_border_radius) {
+	-webkit-border-radius: $box_border_radius;
+	-moz-border-radius: $box_border_radius;
+	-ms-border-radius: $box_border_radius;
+	-o-border-radius: $box_border_radius;
+	border-radius: $box_border_radius;
+}
+.modal-content {
+	position: relative;
+	width: 460px;
+	top: 100px;
+	margin: 0 auto;
+	background-color: #A7A7A7;
+	@include border-radius(5px);
+	
+
+	.modal-content-close {
+		font-size: 0;
+	}
+	.modal-content-close:after {
+		content: "";
+		position: absolute;
+		top: 0px;
+		left: 470px;
+		width: 23px;
+		height: 23px;
+		background-image: url(../img/icon-cross-x.png) ;
+		cursor: pointer;
+	}
+		.modal-content-title {
+			font-size: 24px;
+			line-height: 32px;
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+		p {
+			margin-left: 20px;
+		}
+		input:first-child {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		input {
+			outline: none;
+			border: none;
+			background-color: #F5F988;
+		}
+		button {
+			display: block;
+			width: 120px;
+			min-height: 20px;
+			padding: 5px 10px;
+			background-color: black;
+			color: white;
+			outline: none;
+			border: none;
+			margin-top: 25px;
+			margin-left: 315px;
+			margin-bottom: 20px;
+		}
+
+}
