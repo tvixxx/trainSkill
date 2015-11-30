@@ -65,6 +65,9 @@ body {
 					&:hover {
 						text-decoration: none;
 						background-color: #919191;
+						-webkit-transition: all 0.3s ease;
+						-o-transition: all 0.3s ease;
+						transition: all 0.3s ease;
 					}
 				}
 }

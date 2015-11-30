@@ -22,11 +22,14 @@ var form = popup.querySelector("form");
 				if (!(login.value && password.value)){
 					event.preventDefault();
 					alert("Enter your login and password");
-				}
-				else if (login.value.length < 3) {
+					return;
+				};
+				if (login.value.length < 3) {
 					event.preventDefault();
 					alert ("Low symbols in login");
-				} else if (password.value.length < 6) {
+					return;
+				};
+				if (password.value.length < 6) {
 					event.preventDefault();
 					alert ("Low symbols in password");
 				} else {
