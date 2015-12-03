@@ -1,0 +1,259 @@
+/* line 19, ../sass/style.scss */
+body {
+  min-height: 500px;
+  background-color: #CACACA;
+}
+
+/* line 23, ../sass/style.scss */
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 28, ../sass/style.scss */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 33, ../sass/style.scss */
+.main-header {
+  max-width: 1920px;
+}
+/* line 36, ../sass/style.scss */
+.main-header .main-navigation {
+  display: block;
+}
+/* line 40, ../sass/style.scss */
+.main-header ul {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  font-size: 0;
+  list-style: 0;
+}
+/* line 48, ../sass/style.scss */
+.main-header li {
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: top;
+}
+/* line 55, ../sass/style.scss */
+.main-header a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+  background-color: #F1F1F1;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 65, ../sass/style.scss */
+.main-header a:hover {
+  text-decoration: none;
+  background-color: #919191;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 76, ../sass/style.scss */
+.modal-content {
+  display: none;
+  position: relative;
+  width: 495px;
+  top: 40px;
+  left: -25px;
+  margin: 0 auto;
+  background-color: #A7A7A7;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 1;
+}
+/* line 88, ../sass/style.scss */
+.modal-content .modal-content-close {
+  content: "";
+  position: absolute;
+  font-size: 0;
+  top: 5px;
+  left: 500px;
+  width: 23px;
+  height: 23px;
+  background: url(../img/sprite-login-form.png) no-repeat center;
+  background-position: 0 -304px;
+  cursor: pointer;
+}
+/* line 100, ../sass/style.scss */
+.modal-content h2 {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 10px 0 0 20px;
+}
+/* line 106, ../sass/style.scss */
+.modal-content p {
+  margin-left: 20px;
+  letter-spacing: -1px;
+}
+/* line 110, ../sass/style.scss */
+.modal-content input:first-child {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* line 114, ../sass/style.scss */
+.modal-content input {
+  min-height: 10px;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #000;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #F5F988;
+}
+/* line 122, ../sass/style.scss */
+.modal-content input[type="text"]:focus,
+.modal-content input[type="password"]:focus {
+  border: 1px solid #E0D79E;
+}
+/* line 127, ../sass/style.scss */
+.modal-content button {
+  display: block;
+  width: 120px;
+  min-height: 20px;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  margin-top: 25px;
+  margin-left: 355px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 144, ../sass/style.scss */
+.modal-content button:hover {
+  color: black;
+  background-color: white;
+}
+
+/* line 151, ../sass/style.scss */
+.hide {
+  display: none;
+}
+
+/* line 155, ../sass/style.scss */
+.modal-success {
+  width: 250px;
+  position: relative;
+  min-height: 100px;
+  top: -110px;
+  left: 500px;
+  background-color: #979797;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 10;
+}
+/* line 165, ../sass/style.scss */
+.modal-success p {
+  display: inline-block;
+  margin-left: 60px;
+}
+/* line 169, ../sass/style.scss */
+.modal-success .btn-link {
+  display: block;
+  width: 50px;
+  padding: 5px 30px 5px 55px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 184, ../sass/style.scss */
+.modal-success .btn-link:hover {
+  color: black;
+  background-color: white;
+}
+
+/* line 194, ../sass/style.scss */
+.show {
+  display: block;
+  -webkit-animation: bounce .4s;
+  animation: bounce .4s;
+}
+
+/* line 199, ../sass/style.scss */
+.show-success {
+  display: block;
+  -webkit-animation: bounce-success .4s;
+  animation: bounce-success .4s;
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+    transform: translateX(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+    transform: translateX(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateX(0);
+  }
+}
+@keyframes bounce-success {
+  0% {
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
