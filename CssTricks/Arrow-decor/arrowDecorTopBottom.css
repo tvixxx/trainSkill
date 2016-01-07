@@ -1,7 +1,6 @@
 a.arrow {
     display: inline-block;
     margin: 0 10px;'
-    font-size: 0px;
 }
 
 .arrow::before {
@@ -11,6 +10,7 @@ a.arrow {
     border-left-width: 10px;
     border-right-color: transparent;
     border-left-color: transparent;
+    font-size: 0;
 }
 
 .arrow-up::before {
