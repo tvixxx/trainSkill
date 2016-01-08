@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Test pattern</title>
+   <meta charset="utf-8">
+</head>
+<body>
+    <header class="page-header">Форма личных данных</header>
+    <main>
+        <form action="/echo" method="post">
+            <fieldset>
+                <legend>Заявление на получение визы на кухню</legend>
+                <div class="half-width">
+                    <label>Имя</label>
+			        <input type="text" name="name" value="Имя">
+			    </div>
+			    <div class="half-width">
+			        <label>Паспорт</label>
+			        <input type="text" name="passport" value="Паспорт" pattern="[A-z]{4}-[0-9]{5}"> 
+			    </div>
+			    <label>E-mail</label>
+			    <input type="email" name="birthday" value="Ваш Email">
+			    <label>Адрес сайта</label>
+			    <input type="url" name="birthday" value="Site">
+                </div>
+                <div class="half-width">
+			        <label>Дата заявления</label>
+			        <input type="datetime" name="date" value="02-06-2014">
+			    </div>
+			    <div class="half-width">
+			        <label>Подпись</label>
+			        <input type="datetime" name="sign" value="любое значение">
+			    </div>
+    		</fieldset>
+    		<div class="buttons">
+				<input type="submit" value="Оформить">
+			</div>
+	    </form> 
+    </main>
+    <footer class="page-footer"></footer>
+</body>
+</html>
