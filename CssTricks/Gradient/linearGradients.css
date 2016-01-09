@@ -1,0 +1,100 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    width: 550px;
+    height: 315px;
+    background: url('/assets/course70/cosmos.jpg');
+}
+
+.moon {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white;
+}
+.luna {
+    top: 10px;
+    left: 10px;
+    background-image: linear-gradient(
+        rgba(221, 221, 221, .5),
+        rgba(221, 221, 221, .75)
+    );
+   background-color: #FFDC00;
+}
+
+.umbriel {
+    top: 10px;
+    left: 180px;
+    background-image:
+    linear-gradient(
+      rgba(0, 116, 217, .5),
+      rgba(255, 255, 255, .25),
+      rgba(0, 116, 217, .5)
+  ),
+    linear-gradient(
+      to right,
+      rgba(0, 116, 217, .5),
+      rgba(255, 255, 255, .25),
+      rgba(0, 116, 217, .5)
+  );
+    background-color: #ddd;
+}
+
+.titan {
+    top: 10px;
+    left: 350px;
+    background-image: linear-gradient(
+        rgba(255, 133, 27, .75),
+        rgba(0, 0, 0, .75),
+        rgba(255, 133, 27, .75)
+    );
+    background-color: #DDDDDD;
+}
+
+.io {
+    top: 165px;
+    left: 10px;
+    background-image: linear-gradient(
+        rgba(0, 116, 217, .5),
+        rgba(255, 133, 27, .25),
+        rgba(0, 116, 217, .5)
+    ),
+    linear-gradient(
+        to right,
+        rgba(0, 116, 217, .5),
+        rgba(255, 133, 27, .25),
+        rgba(0, 116, 217, .5)
+    );
+   background-color: #DDDDDD;
+}
+
+.europa {
+    top: 165px;
+    left: 180px;
+    background-image: linear-gradient(
+        rgba(255, 133, 27, .5),
+        rgba(255, 220, 0, .25),
+        rgba(255, 255, 255, .5)
+    ),
+    linear-gradient(
+        to right,
+        rgba(255, 133, 27, .5),
+        rgba(255, 220, 0, .25),
+        rgba(255, 255, 255, .5)
+    );
+    background-color: #DDDDDD;  
+}
+
+.triton {
+    top: 165px;
+    left: 350px;
+    background-image:  linear-gradient(
+    rgba(0, 116, 217, .5),
+    rgba(221, 221, 221, .75)
+    ), linear-gradient(#FFDC00, #FFFFFF) ;
+    background-color: none;
+}
