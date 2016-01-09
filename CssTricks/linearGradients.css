@@ -1,0 +1,191 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    width: 550px;
+    height: 315px;
+    background: url('/assets/course70/cosmos.jpg');
+}
+
+.moon {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white;
+}
+
+/*
+Смешиваемые цвета для спутников
+
+Cплошные фоны:
+
+1. спутник - ?
+background-color: #FFDC00;
+
+2. спутник - ?
+background-color: #DDDDDD;
+
+3. спутник - ?
+background-color: #DDDDDD;
+
+4. спутник - ?
+background-color: #DDDDDD;
+
+5. спутник - ?
+background-color: #DDDDDD;
+
+Градиенты:
+
+6. спутник - ?
+linear-gradient(#FFDC00, #FFFFFF) №5
+
+7. спутник - ?
+linear-gradient(
+    rgba(0, 116, 217, .5),
+    rgba(221, 221, 221, .75)
+)
+
+8. спутник - ? LUNA!!!!!!!!! №1
+linear-gradient(
+    rgba(221, 221, 221, .5),
+    rgba(221, 221, 221, .75)
+)
+
+9. спутник - ?
+linear-gradient(
+    rgba(255, 133, 27, .75),
+    rgba(0, 0, 0, .75),
+    rgba(255, 133, 27, .75)
+)
+
+10. спутник - ? #2
+linear-gradient(
+    rgba(0, 116, 217, .5),
+    rgba(255, 133, 27, .25),
+    rgba(0, 116, 217, .5)
+)
+
+11. спутник - ?
+linear-gradient(
+    rgba(0, 116, 217, .5),
+    rgba(255, 255, 255, .25),
+    rgba(0, 116, 217, .5)
+)
+
+12. спутник - ?
+linear-gradient(
+    rgba(255, 133, 27, .5),
+    rgba(255, 220, 0, .25),
+    rgba(255, 255, 255, .5)
+)
+
+13. спутник - ?
+linear-gradient(
+    to right,
+    rgba(0, 116, 217, .5),
+    rgba(255, 133, 27, .25),
+    rgba(0, 116, 217, .5)
+)
+
+14. спутник - ?
+linear-gradient(
+    to right,
+    rgba(0, 116, 217, .5),
+    rgba(255, 255, 255, .25),
+    rgba(0, 116, 217, .5)
+)
+
+15. спутник - ?
+linear-gradient(
+    to right,
+    rgba(255, 133, 27, .5),
+    rgba(255, 220, 0, .25),
+    rgba(255, 255, 255, .5)
+)
+*/
+
+.luna {
+    top: 10px;
+    left: 10px;
+    background-image: linear-gradient(
+        rgba(221, 221, 221, .5),
+        rgba(221, 221, 221, .75)
+    );
+   background-color: #FFDC00;
+}
+
+.umbriel {
+    top: 10px;
+    left: 180px;
+    background-image:
+    linear-gradient(
+    rgba(0, 116, 217, .5),
+    rgba(255, 255, 255, .25),
+    rgba(0, 116, 217, .5)
+),
+    linear-gradient(
+    to right,
+    rgba(0, 116, 217, .5),
+    rgba(255, 255, 255, .25),
+    rgba(0, 116, 217, .5)
+);
+    background-color: #ddd;
+}
+
+.titan {
+    top: 10px;
+    left: 350px;
+    background-image: linear-gradient(
+        rgba(255, 133, 27, .75),
+        rgba(0, 0, 0, .75),
+        rgba(255, 133, 27, .75)
+    );
+    background-color: #DDDDDD;
+}
+
+.io {
+    top: 165px;
+    left: 10px;
+    background-image: linear-gradient(
+        rgba(0, 116, 217, .5),
+        rgba(255, 133, 27, .25),
+        rgba(0, 116, 217, .5)
+    ),
+    linear-gradient(
+        to right,
+        rgba(0, 116, 217, .5),
+        rgba(255, 133, 27, .25),
+        rgba(0, 116, 217, .5)
+    );
+   background-color: #DDDDDD;
+}
+
+.europa {
+    top: 165px;
+    left: 180px;
+    background-image: linear-gradient(
+        rgba(255, 133, 27, .5),
+        rgba(255, 220, 0, .25),
+        rgba(255, 255, 255, .5)
+    ),
+    linear-gradient(
+        to right,
+        rgba(255, 133, 27, .5),
+        rgba(255, 220, 0, .25),
+        rgba(255, 255, 255, .5)
+    );
+    background-color: #DDDDDD;  
+}
+
+.triton {
+    top: 165px;
+    left: 350px;
+    background-image:  linear-gradient(
+    rgba(0, 116, 217, .5),
+    rgba(221, 221, 221, .75)
+    ), linear-gradient(#FFDC00, #FFFFFF) ;
+    background-color: none;
+}
