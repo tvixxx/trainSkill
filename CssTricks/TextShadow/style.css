@@ -23,3 +23,26 @@ span {
     font-size: 150px;
     color: #CB454C;
 }
+
+/* Декоративная ретро-тень */
+body {
+    font-family: Arial, sans-serif;
+    color: #444;
+    background: url('lens.jpg') no-repeat 50% 0;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 55px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #E5D4C0,
+    4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+span {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    font-size: 100px;    
+}
