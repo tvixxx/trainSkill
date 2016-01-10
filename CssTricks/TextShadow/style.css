@@ -1,0 +1,25 @@
+/* Вдавленный текст */
+body {
+    font-family: Arial, sans-serif;
+    color: #2B2328;
+    background: url('pumpkin.jpg') no-repeat 50% 0;
+}
+
+h1 {
+    margin: 30px;
+    font-size: 100px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-shadow: 
+    -1px -1px 1px #1E181C,
+    2px 2px 1px #52424D;
+    
+}
+
+span {
+    position: absolute;
+    top: 270px;
+    left: 30px;
+    font-size: 150px;
+    color: #CB454C;
+}
