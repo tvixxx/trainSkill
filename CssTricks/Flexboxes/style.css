@@ -1,0 +1,57 @@
+/* common styles */
+.palette-small,
+.part {
+    display: flex;   
+}
+/* first square */
+.palette-box:nth-child(1) .palette-small {
+    flex-direction: column;
+    justify-content: center;
+}
+.palette-box:nth-child(1) .color-2 {
+    order: 3;   
+}
+.palette-box:nth-child(1) .color-3 {
+    order: 1;   
+    align-self: center;
+}
+.palette-box:nth-child(1) .color-4 {
+    order: 4; 
+    align-self: center;
+}
+.palette-box:nth-child(1) .color-5 {
+    order: 2;   
+}
+
+/* second square */
+.palette-box:nth-child(2) .palette-small {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    
+}
+.palette-box:nth-child(2) .color-1,
+.palette-box:nth-child(2) .color-4 {
+    align-self: flex-start;
+}
+.palette-box:nth-child(2) .color-2,
+.palette-box:nth-child(2) .color-6 {
+    align-self: flex-end;
+}
+
+/* third square */
+.palette-box:nth-child(3) .palette-small {
+    justify-content: space-between;
+}
+.palette-box:nth-child(3) .part {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* fourth square */
+.pallete-box:nth-child(4) .palette-small {
+      justify-conetnt: space-between;
+}
+.palette-box:nth-child(4) .part:nth-child(2) {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
