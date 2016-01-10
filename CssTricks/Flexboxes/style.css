@@ -1,7 +1,7 @@
-/* common styles */
 .palette-small,
 .part {
     display: flex;   
+    justify-content: space-between;
 }
 /* first square */
 .palette-box:nth-child(1) .palette-small {
@@ -49,6 +49,7 @@
 
 /* fourth square */
 .pallete-box:nth-child(4) .palette-small {
+        flex-direction: column;
       justify-conetnt: space-between;
 }
 .palette-box:nth-child(4) .part:nth-child(2) {
