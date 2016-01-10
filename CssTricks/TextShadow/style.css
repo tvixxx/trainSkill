@@ -46,3 +46,73 @@ span {
     left: 50px;
     font-size: 100px;    
 }
+
+/* Психоделическая тень  */
+/* <p>
+        <span>C</span><span>S</span><span>S</span>
+    </p>
+*/
+
+html, 
+body {
+    font-size: 200px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #111;
+    margin: 0;
+    min-width: 570px;
+}
+
+p {
+    text-align: center;
+    padding-top: 60px;
+    margin: 0;
+}
+
+span {
+    margin-left: 60px;
+}
+
+span:first-child {
+    margin-left: 0;
+    text-shadow: 
+        5px -5px 0 #7FDBFF,
+        10px -10px 0 #39CCCC,
+        15px -15px 0 #3D9970,
+        20px -20px 0 #2ECC40,
+        25px -25px 0 #01FF70,
+        30px -30px 0 #FFDC00,
+        35px -35px 0 #FF851B,
+        40px -40px 0 #FF4136,
+        45px -45px 0 #F012BE,
+        50px -50px 0 #B10DC9;
+}
+
+span:nth-child(2) {
+     text-shadow: 
+        0px -5px 0 #7FDBFF,
+        0px -10px 0 #39CCCC,
+        0px -15px 0 #3D9970,
+        0px -20px 0 #2ECC40,
+        0px -25px 0 #01FF70,
+        0px -30px 0 #FFDC00,
+        0px -35px 0 #FF851B,
+        0px -40px 0 #FF4136,
+        0px -45px 0 #F012BE,
+        0px -50px 0 #B10DC9;
+}
+
+span:last-child {
+    text-shadow: 
+        -5px -5px 0 #7FDBFF,
+        -10px -10px 0 #39CCCC,
+        -15px -15px 0 #3D9970,
+        -20px -20px 0 #2ECC40,
+        -25px -25px 0 #01FF70,
+        -30px -30px 0 #FFDC00,
+        -35px -35px 0 #FF851B,
+        -40px -40px 0 #FF4136,
+        -45px -45px 0 #F012BE,
+        -50px -50px 0 #B10DC9;
+}
