@@ -1,0 +1,31 @@
+// c - color
+$yellow: #fee603;
+$shadow-text-c: #1e1f23;
+$mint: #25b0a9;
+
+// common styles
+html {
+	font-size: 10px;
+	font-family: "PT-Sans";
+	font-weight: bold;
+}
+.post {
+	max-width: 30em;
+	margin: 5em;
+	float: left;
+}
+a {
+	font-size: 5em;
+	text-decoration: none;
+	color: black;
+	text-shadow: 1px 1px 0 rgba($shadow-text-c, .4);
+}
+.fun-hover {
+	background-image: linear-gradient(to right, $mint 50%, $yellow 50%);
+	background-size: 200%;
+	transition: background-position 0.4s;
+	
+	&:hover {
+		background-position: -100%;
+	}
+}
